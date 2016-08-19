@@ -2,9 +2,15 @@
   "meta": {
     "username": "iwangkai",
     "repositoryName": "iwangkai.github.io",
-    "branch": "master"
+    "branch": "master",
+    "cname": "www.iwangkai.cn"
   },
+  "site": {
+    "title": "王凯博客",
+    "description": "java，android，web等技术"
+  },
+  "socialnetwork": {},
   "theme": {
-    "name": "Casper"
+    "name": "casper"
   }
 }
