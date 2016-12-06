@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Android安全卫士开发日记 Day01 - 王凯博客</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Android安全卫士开发日记 Day01">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Android安全卫士开发日记 Day01">
+    <meta property="og:description" content="">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="//www.iwangkai.cn/themes/uno/assets/css/uno.css?v=1481033672673" />
+
+    <link rel="canonical" href="http://www.iwangkai.cn/2016/12/06/Android-Day01.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="王凯博客" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Android安全卫士开发日记 Day01" />
+    <meta property="og:description" content="功能分析 手机防盗：包括sim卡变更报警，gps定位，远程锁屏，远程删除数据，通过发送指令让手机响铃； 来电、短信防火墙：通过黑名单号码比对进行骚扰拦截，并且可以设置来电拦截，短信拦截，全部拦截。 软件管理：对软件安装，占用情况的查看。管理软件的启动、卸载、通过短信分享； 进程管理：用于对进程查看占用情况，对单个进程清理，一键清理进程； 缓存清理：用于查看所有程序的缓存，并可以一键清理所有程序缓存； 电话号码归属地查询，对来电号码进行查询，将查询结果显示于电话界面。 短信备份恢复：可以将短信保存到数据库或本机文件进行备份和恢复。 对软件进行屏幕适配，国际化适配。 代码组织结构 一般代码组织结构分为两种： 根据功能模块划分 cn.iwangkai.oa.money //工资相关 cn.iwa" />
+    <meta property="og:url" content="http://www.iwangkai.cn/2016/12/06/Android-Day01.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Android安全卫士开发日记 Day01" />
+    <meta name="twitter:description" content="功能分析 手机防盗：包括sim卡变更报警，gps定位，远程锁屏，远程删除数据，通过发送指令让手机响铃； 来电、短信防火墙：通过黑名单号码比对进行骚扰拦截，并且可以设置来电拦截，短信拦截，全部拦截。 软件管理：对软件安装，占用情况的查看。管理软件的启动、卸载、通过短信分享； 进程管理：用于对进程查看占用情况，对单个进程清理，一键清理进程； 缓存清理：用于查看所有程序的缓存，并可以一键清理所有程序缓存； 电话号码归属地查询，对来电号码进行查询，将查询结果显示于电话界面。 短信备份恢复：可以将短信保存到数据库或本机文件进行备份和恢复。 对软件进行屏幕适配，国际化适配。 代码组织结构 一般代码组织结构分为两种： 根据功能模块划分 cn.iwangkai.oa.money //工资相关 cn.iwa" />
+    <meta name="twitter:url" content="http://www.iwangkai.cn/2016/12/06/Android-Day01.html" />
+    
+    <script type="application/ld+json">
+null
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="王凯博客" href="http://www.iwangkai.cn/rss/" />
+
+</head>
+<body class="post-template no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed " >
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <h1 class="panel-cover__title panel-title"><a href="http://www.iwangkai.cn" title="link to homepage for 王凯博客">王凯博客</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">java，android，web等技术</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="http://www.iwangkai.cn/#blog" title="link to 王凯博客 blog" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="06 Dec 2016" class="post-meta__date date">06 Dec 2016</time> &#8226; <span class="post-meta__tags tags"></span>
+        <span class="post-meta__author author"><img src="https://avatars.githubusercontent.com/u/17674643?v&#x3D;3" alt="profile image for 王凯" class="avatar post-meta__avatar" /> by 王凯</span>
+      </div>
+      <h1 class="post-title">Android安全卫士开发日记 Day01</h1>
+    </header>
+
+    <section class="post">
+      <div class="sect1">
+<h2 id="__">功能分析</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>手机防盗：包括sim卡变更报警，gps定位，远程锁屏，远程删除数据，通过发送指令让手机响铃；</p>
+</li>
+<li>
+<p>来电、短信防火墙：通过黑名单号码比对进行骚扰拦截，并且可以设置来电拦截，短信拦截，全部拦截。</p>
+</li>
+<li>
+<p>软件管理：对软件安装，占用情况的查看。管理软件的启动、卸载、通过短信分享；</p>
+</li>
+<li>
+<p>进程管理：用于对进程查看占用情况，对单个进程清理，一键清理进程；</p>
+</li>
+<li>
+<p>缓存清理：用于查看所有程序的缓存，并可以一键清理所有程序缓存；</p>
+</li>
+<li>
+<p>电话号码归属地查询，对来电号码进行查询，将查询结果显示于电话界面。</p>
+</li>
+<li>
+<p>短信备份恢复：可以将短信保存到数据库或本机文件进行备份和恢复。</p>
+</li>
+<li>
+<p>对软件进行屏幕适配，国际化适配。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="___2">代码组织结构</h2>
+<div class="sectionbody">
+<div class="sect3">
+<h4 id="___3">一般代码组织结构分为两种：</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>根据功能模块划分</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>cn.iwangkai.oa.money //工资相关
+cn.iwangkai.oa.meeting //会议相关
+cn.iwangkai.oa.media //娱乐相关</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>根据代码功能划分</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+    </section>
+
+  </article>
+
+
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2016. All rights reserved.</span>
+                <span class="footer__copyright"><a href="http://uno.daleanthony.com" title="link to page for Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="link to website for Dale-Anthony">Dale-Anthony</a></span>
+                <span class="footer__copyright">Proudly published with <a href="http://hubpress.io" title="link to Hubpress website">Hubpress</a></span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();
+      </script>
+
+    <script type="text/javascript" src="//www.iwangkai.cn/themes/uno/assets/js/main.js?v=1481033672673"></script>
+    
+
+</body>
+</html>
