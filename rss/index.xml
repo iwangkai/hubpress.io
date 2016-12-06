@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[王凯博客]]></title><description><![CDATA[java，android，web等技术]]></description><link>http://www.iwangkai.cn</link><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Dec 2016 13:59:46 GMT</lastBuildDate><atom:link href="http://www.iwangkai.cn/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[asciidoc使用指导]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[王凯博客]]></title><description><![CDATA[java，android，web等技术]]></description><link>http://www.iwangkai.cn</link><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Dec 2016 14:02:23 GMT</lastBuildDate><atom:link href="http://www.iwangkai.cn/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[asciidoc使用指导]]></title><description><![CDATA[<div class="sect1">
+<h2 id="_asciidoc">AsciiDoc简介</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
+<li>
+<p>AsciiDoc是轻型的标识语言，通过解释工具（编译）可以将文本转换成html文件</p>
+</li>
 <li>
 <p>Wiki： <a href="http://en.wikipedia.org/wiki/AsciiDoc" class="bare">http://en.wikipedia.org/wiki/AsciiDoc</a></p>
 </li>
@@ -27,9 +31,17 @@
 <p>UltraEdit选择菜单高级&#8594;工具配置,插入一个新菜单（假定名为AsciiDoc）,“命令行”为D:\Python2.7\python.exe D:\soft\asciidoc-8.6.0\asciidoc-8.6.0\asciidoc.py -n -a toc "%f"</p>
 </li>
 <li>
-<p>“工具目录”为%p
-== 注意事项</p>
+<p>“工具目录”为%p</p>
 </li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="___2">注意事项</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>保存格式必须是UTF-8(菜单：“文件&#8594;转换&#8594;ASCII 到UTF-8(unicode编辑) ”)</p>
 </li>
@@ -38,7 +50,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_asciidoc">AsciiDoc语法</h2>
+<h2 id="_asciidoc_2">AsciiDoc语法</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -49,18 +61,32 @@
 <p>AsciiDoc简明指南: userguide_cn_lite.html</p>
 </li>
 <li>
-<p>AsciiDoc语法示例：AsciiDoc_cheatsheet.pdf
-== 使用方法
- . 按AsciiDoc语法编码文本文件；
- . 执行“菜单&#8594;高级&#8594;AsciiDoc”命令（ <strong>快捷键</strong> ：Ctrl+Shift+0）；
- . 查看html文件，名字与txt文件相关，后缀为html</p>
+<p>AsciiDoc语法示例：AsciiDoc_cheatsheet.pdf</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="___2">示例文件</h2>
+<h2 id="___3">使用方法</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>按AsciiDoc语法编码文本文件；</p>
+</li>
+<li>
+<p>执行“菜单&#8594;高级&#8594;AsciiDoc”命令（ <strong>快捷键</strong> ：Ctrl+Shift+0）；</p>
+</li>
+<li>
+<p>查看html文件，名字与txt文件相关，后缀为html</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="___4">示例文件</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
