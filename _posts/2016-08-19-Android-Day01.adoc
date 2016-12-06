@@ -1,3 +1,4 @@
-= Android开发入门
+= Android安全卫士开发日记 Day01
+== 功能分析
 
-== part one
+
